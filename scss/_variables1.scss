@@ -1,0 +1,33 @@
+$bg_url: url(../img/m-h-day.jpg);
+$landing-logo_color: #2C2F3C; 
+$bg_color: #fff;
+$bg_section_card: #21232E;
+$bg_banner_gradient: linear-gradient(90deg, #649312, #315FC8);
+$bg_footer: #21232E;
+$bg_button: #699900;
+$color_after_word: #14A0C7;
+
+$font-size: (
+    big: 16px, 
+    medium: 14px,
+    small: 12px,
+    ultra-big: 18px
+);
+
+@mixin button {
+        width: 120px;
+        height: 40px;
+        background-color: $bg_button;
+        border: none;
+        font-size: map-get($font-size, medium);
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+}
+
+@mixin heading_after {
+        content: "";
+        position: absolute;
+        background-color: $color_after_word;
+        z-index: -1;
+}

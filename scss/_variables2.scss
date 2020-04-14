@@ -1,0 +1,33 @@
+$bg_url: url(../img/m-h-night.jpg);
+$landing-logo_color: #fff; 
+$bg_color: #21232E;
+$bg_section_card: #3B3F50;
+$bg_banner_gradient: linear-gradient(90deg, #D99C0A, #9A394A);
+$bg_footer: #3B3F50;
+$bg_button: #E3AC00;
+$color_after_word: #FF4E33;
+
+$font-size: (
+    big: 16px, 
+    medium: 14px,
+    small: 12px,
+    ultra-big: 18px
+);
+
+@mixin button {
+        width: 120px;
+        height: 40px;
+        background-color: $bg_button;
+        border: none;
+        font-size: map-get($font-size, medium);
+        color: #fff;
+        font-weight: 600;
+        letter-spacing: 1.2px;
+}
+
+@mixin heading_after {
+        content: "";
+        position: absolute;
+        background-color: $color_after_word;
+        z-index: -1;
+}
